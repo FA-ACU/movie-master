@@ -1,4 +1,4 @@
- /* reglas 
+ /* reglas
 selectores
 declaraciones
 propiedades
@@ -67,7 +67,7 @@ h2,
 h3,
 h4,
 h5,
-h6{ 
+h6{
   font-family: 'Fjalla One', sans-serif;
   font-weight: normal;
   /* font-style: italic; */
@@ -104,7 +104,7 @@ h2{color:#026fff;
   /* background-size: 500px 300px; */
   /* background-repeat: no-repeat; */
   /* background-position-x: right ; */
-  display: flex; 
+  display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -116,8 +116,8 @@ h2{color:#026fff;
 
 .portfolio{
   background: #fafafa;
-  padding: 20px;  
-  
+  padding: 20px;
+
 }
 
 .project{
@@ -198,7 +198,7 @@ figure{
   color: white;
   display: flex;
   height: 70px;
-  align-items: center;  
+  align-items: center;
   justify-content: space-between;
   display: wrap;
 }
@@ -224,7 +224,7 @@ figure{
   align-items: center;
   padding: 0 10px;
 }
- 
+
 
 .flexbox{
   display: flex;
@@ -239,7 +239,7 @@ figure{
   margin: 5px;
   border: 1px solid red
 }
- 
+
 .footer {
   color: white;
   background-color: #1b2127 ;
@@ -247,7 +247,7 @@ figure{
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  
+
   }
 
 .footer img {
@@ -270,7 +270,7 @@ figure{
 .event{
   margin: 1%;
   width: 48%;
-  flex-shrink: 0; 
+  flex-shrink: 0;
   border-radius: 10px;
   overflow: hidden;
   background:#f4fbff;
@@ -354,11 +354,11 @@ text-align: left;
   border-color: white;
   padding: 10px 0;
   border-radius: 5px;
-  width: 100px; 
-  margin-top: 10px; 
+  width: 100px;
+  margin-top: 10px;
 }
 
- 
+
 .form-email h3{
   font-family: 'Source Sans Pro', sans-serif;
 }
@@ -390,8 +390,85 @@ text-align: left;
   top: 5px;
   color: white;
 }
- 
+
+/*-----## Section skills ##-----*/
+
+.skills {
+ padding: 50px 15px;
+}
+
+.skills h1{
+ font-size: 25px;
+ font-weight: 900;
+ text-align: center;
+ margin-bottom: 40px;
+ color: #026fff;
+
+}
+
+.content-skills {
+  max-width: 1000px;
+  flex: 1;
+  margin: 0 auto;
+  display: inherit;
+  justify-content: inherit;
+  align-items: inherit;
+  height: inherit;
+  flex-wrap: inherit;
+}
+
+.skills-card {
+ line-heightx : 0px;
+ width: 100%;
+ height: auto;
+ margin-bottom: 50px;
+ background-color: #fff;
+ border-radius: 8px;
+ box-shadow: 0px 0px 15px rgba(2, 33, 42, 0.1), 0px 4px 12px rgba(2, 33, 42, 0.2);
+}
+
+.skills-card h4 {
+ text-align: center;
+ text-transform: uppercase;
+ padding: 15px 0;
+}
+
+.skill-card_content {
+ padding: 15px 20px;
+ margin: 0px;
+}
+
+.skill-tech {
+ display: flex;
+ justify-content: space-around;
+ align-items: center;
+ padding: 5px 0;
+ border: 1px solid #000;
+ border-radius: 8px;
+}
+
+.skill-tech img {
+ width: 20px;
+}
+
+.content-skills{
+  display: flex;
+  grid-template-columns: repeat(2, 350px);
+  grid-column-gap: 25px;
+  justify-content: space-between;
+  align-items: center;
+}
+
 @media screen and (max-width: 1024px){
+
+  .content-skills{
+    display: grid;
+    grid-template-columns: repeat(2, 350px);
+    grid-column-gap: 25px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
   .event-list-titl{
     margin-left: 0;
   }
@@ -447,6 +524,15 @@ text-align: left;
 }
 
 @media screen and (max-width: 768px){
+
+  .content-skills{
+    display: grid;
+    grid-template-columns: repeat(2, 350px);
+    grid-column-gap: 25px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
   h2{
     font-size: 1.2em;
     margin: .5em 0;
@@ -499,7 +585,7 @@ text-align: left;
     text-align: center;
   }
   .project-details{
-    width: auto; 
+    width: auto;
       /* font-size: 10px;  */
   }
 .project-course, .project-date, .project-url{
@@ -520,7 +606,7 @@ text-align: left;
   }
   .project-description{
     font-size: 1em;
-  } 
+  }
   .event{
     width: auto;
     flex-shrink: initial;
@@ -529,8 +615,17 @@ text-align: left;
     width: 100%;
   }
 }
-  
+
 @media screen and (max-width: 480px){
+
+  .content-skills{
+    display: block;
+    grid-template-columns: repeat(2, 350px);
+    grid-column-gap: 25px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
   h1{
     font-size: 1.5em;
   }
@@ -561,6 +656,15 @@ text-align: left;
 }
 
 @media screen and (max-width: 320px){
+
+  .content-skills{
+    display: block;
+    grid-template-columns: repeat(2, 350px);
+    grid-column-gap: 25px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
 h1{
   font-size: 1.2em;
   background: rgba(0, 0, 0, .5);
